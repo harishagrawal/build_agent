@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+.env
+
+# Run artifacts -- keep the folders, ignore what each run produces.
+logs/*
+!logs/.gitkeep
+generated/*
+!generated/.gitkeep
+output/*
+!output/.gitkeep

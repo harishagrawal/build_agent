@@ -1,0 +1,7 @@
+[
+  {"customer": "Alice", "item": "Widget", "quantity": 3, "unit_price": 9.99},
+  {"customer": "Bob", "item": "Gadget", "quantity": 1, "unit_price": 49.5},
+  {"customer": "Alice", "item": "Gizmo", "quantity": 2, "unit_price": 14.0},
+  {"customer": "Carol", "item": "Widget", "quantity": 10, "unit_price": 9.99},
+  {"customer": "Bob", "item": "Widget", "quantity": 5, "unit_price": 9.99}
+]
