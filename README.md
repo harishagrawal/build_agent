@@ -55,15 +55,22 @@ build_agent/
 
 ## Setup
 
+Requires `anthropic>=1.0`. If your machine has an older `anthropic` pinned
+globally (pre-1.0 doesn't support `output_config`/current `thinking` params),
+use a project-local virtualenv rather than upgrading it system-wide:
+
 ```bash
-pip install -r requirements.txt
+python3 -m venv .venv
+./.venv/bin/pip install -r requirements.txt
 export ANTHROPIC_API_KEY=sk-ant-...      # or: ant auth login
 ```
+
+Then run everything through `./.venv/bin/python3` (or `source .venv/bin/activate` first).
 
 ## Running it
 
 A sample requirement + input are already in place (customer spend summary).
-Run as-is:
+Run as-is (use `.venv/bin/python3` if you set up the virtualenv above):
 
 ```bash
 python3 main.py
